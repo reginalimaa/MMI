@@ -1,0 +1,38 @@
+.container-cards{
+    display: grid;
+
+    grid-template-areas: 
+        "card-1 card-2"
+        "card-3 card-4";
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 146px 146px;
+}
+
+.container-cards-1 {
+    background-color:; 
+    grid-area: card-1;
+}
+
+.container-cards-2 {
+    background-color:; 
+    grid-area: card-2;
+}
+
+.container-cards-3 {
+    background-color:; 
+    grid-area: card-3;   
+}
+
+.container-cards-4 {
+    background-color:; 
+    grid-area: card-4;
+}
+
+.card-button{
+    border-radius: 323232320px;
+    border: none;
+
+    width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MMI</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+
+</head>
+
+<body>
+        <header class="l-header">
+            <img class="logo" src="" alt="">
+            <nav class="dropdown">
+                <button onclick="myFunction()" class="dropbtn"><img  class="img-btn" src="assets/img/hamburger.png" alt=""></button>
+                <ul id="myDropdown" class="dropdown-content">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Tire suas dúvidas</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="l-main">
+
+            <h1 class="title-login">Entre com seu e-mail e senha para acessar sua conta</h1>
+
+            <section class="main-section-login">
+
+                <label class="label" for="email" >E-mail</label>
+                <input class="input" type="text" name="email" id="emailId">
+
+                <label class="label-1" for="passWord">Senha</label>
+                <input class="input" type="text" name="passWord" id="passWordId">
+                <a href="register.html">Create account</a>
+
+                <button class="button-login">
+                    Entrar
+                </button>
+
+            </section>
+        
+        </main>
+
+        <footer class="l-footer">
+            <h1>footer</h1>
+        </footer>
+
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+</body>
+</html>
