@@ -95,9 +95,8 @@ body{
 
 .l-main{
     grid-area: main;
-   
-    padding: 60px;
-
+    padding-top: 60px;
+    padding-bottom: 60px;
     max-height: 400px;
     overflow: auto;
 }
@@ -111,5 +110,73 @@ body{
 
 th, td {
     border: 1px solid black;
+    padding: 10px;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 22px;
+    padding-bottom: 30px;
+}
+
+.container-cards{
+    display: grid;
+
+    grid-template-areas: 
+        "card-1 card-2"
+        "card-3 card-4";
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 146px 146px;
+}
+
+.container-cards-1 {
+    background-color:; 
+    grid-area: card-1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center
+
+}
+
+.container-cards-2 {
+    background-color:; 
+    grid-area: card-2;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.container-cards-3 {
+    background-color:; 
+    grid-area: card-3;   
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.container-cards-4 {
+    background-color:; 
+    grid-area: card-4;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.card-button{
+    border-radius: 323232320px;
+    border: none;
+
+    width: 100px;
+    height: 100px;
+}
+
+p {
+    width: 106px;
+    margin: 0, auto;
 }
 
