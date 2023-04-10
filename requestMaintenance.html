@@ -7,7 +7,6 @@
 
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/machineIdentification.css">
     <link rel="stylesheet" href="assets/css/requesteMaintenance.css">
 </head>
 
@@ -28,31 +27,39 @@
     <main class="container l-main">
         <h1>Preencha os campos abaixo</h1>
         
-        <form action="">
-            <label class="label-forms-request" for="">Temperatura</label>
-            <input class="line1-forms" type="text" placeholder="C°">
+        <form class="forms-request-maintenance" action="">
+            <div class="container-form-line1">
+                <div class="form-temp">
+                    <label class="label-forms-request" for="">Temperatura</label>
+                    <input class="input-forms-line1" type="text" placeholder="C°">
+                </div>
 
-            <label class="label-forms-request" for="">Oscilação</label>
-            <input class="line1-forms" type="text" placeholder="">
+                <div class="form-line1">
+                    <label class="label-forms-request" for="">Oscilação</label>
+                    <input class="input-forms-line1" type="text" placeholder="">
+                </div>
 
-            <label class="label-forms-request" for="">Ruídos</label>
-            <select class="line1-forms">
-                <option value="Sim">Sim</option>
-                <option value="Nao">Nao</option>
-            </select>
+                <div class="form-line1">
+                    <label class="label-forms-request" for="">Ruídos</label>
+                    <select class="input-forms-line1">
+                        <option value="Sim">Sim</option>
+                        <option value="Nao">Nao</option>
+                    </select>
+                </div>
+            </div>
 
             <label class="label-contact" for="message">Descreva a falha</label>
-            <textarea class="text-box" name="message" id="messageid" placeholder="Digite aqui ..." cols="30" rows="10"></textarea>
+            <textarea class="input-text" name="message" id="messageid" placeholder="Digite aqui ..." cols="30" rows="10"></textarea>
         
             <label class="label-forms-request" for="">Classificação de risco</label>
-            <select class="line1-forms">
+            <select class="input-text">
                 <option value="Sim">Urgente, manutenção imediata</option>
                 <option value="Sim"></option>
                 <option value="Nao">Pouco urgente</option>
             </select>
 
             <label for="">Fazer upoad de arquivos</label>
-            <input type="file" placeholder=""> 
+            <input class="input-text" type="file" placeholder=""> 
 
             <button class="button-login">
                 Enviar solicitação
