@@ -1,0 +1,13 @@
+form{
+    display: inline;
+    flex-direction: row;
+}
+
+.line1-forms {
+    width: 80px;
+}
+
+.label-forms-request {
+    font-weight: lighter;
+    font-size: 16px;
+}

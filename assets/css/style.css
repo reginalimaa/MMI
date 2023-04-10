@@ -10,8 +10,8 @@
 }
 
 .container {
-    padding-left: 6%;
-    padding-right: 6%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 body{
@@ -180,3 +180,10 @@ p {
     margin: 0, auto;
 }
 
+.button-login{
+    border-radius: 2px;
+    border: none;
+
+    padding: 18px;
+    margin-top: 60px;
+}

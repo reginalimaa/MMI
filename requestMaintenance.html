@@ -1,15 +1,14 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Identificar Máquina</title>
+    <title>Solicitar manutenção</title>
 
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/machineIdentification.css">
-
+    <link rel="stylesheet" href="assets/css/requesteMaintenance.css">
 </head>
 
 <body>
@@ -27,30 +26,38 @@
     </header>
 
     <main class="container l-main">
-        <h1>Identificar máquina</h1>
-        <section class="container-cards">
+        <h1>Preencha os campos abaixo</h1>
+        
+        <form action="">
+            <label class="label-forms-request" for="">Temperatura</label>
+            <input class="line1-forms" type="text" placeholder="C°">
 
-            <div class="container-cards-1">
-                <button class="card-button">
-                    <img src="assets/img/qrCode.png" alt="">
-                </button>
-                <p>Escanear QR Code</p>
-            </div>
+            <label class="label-forms-request" for="">Oscilação</label>
+            <input class="line1-forms" type="text" placeholder="">
 
-            <div class="columns">
-                <div class="column">
-                  <p><button type="button" onclick="getStream('video')">Grab video</button></p>
-                </div>
-            </div>
+            <label class="label-forms-request" for="">Ruídos</label>
+            <select class="line1-forms">
+                <option value="Sim">Sim</option>
+                <option value="Nao">Nao</option>
+            </select>
 
-            <div class="container-cards-2">
-                <button class="card-button">
-                    <img src="assets/img/dictation.png" alt="">
-                </button>
-                <p>Digitar código manualmente</p>
-            </div>
-            
-        </section>
+            <label class="label-contact" for="message">Descreva a falha</label>
+            <textarea class="text-box" name="message" id="messageid" placeholder="Digite aqui ..." cols="30" rows="10"></textarea>
+        
+            <label class="label-forms-request" for="">Classificação de risco</label>
+            <select class="line1-forms">
+                <option value="Sim">Urgente, manutenção imediata</option>
+                <option value="Sim"></option>
+                <option value="Nao">Pouco urgente</option>
+            </select>
+
+            <label for="">Fazer upoad de arquivos</label>
+            <input type="file" placeholder=""> 
+
+            <button class="button-login">
+                Enviar solicitação
+            </button>
+        </form>
 
     </main>
 
