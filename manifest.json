@@ -1,0 +1,66 @@
+{
+    "background_color": "#ffffff",
+    "description": "Esse é um app de aluguéis de repúblicas para pessoas universitárias.\nSimilar aos modelos de Quinto Andar e Loft, a empresa realiza reformas e prepara moradias para recepção de pessoas universitárias em um ambiente específico e otimizado para a vida de graduação.",
+    "dir": "ltr",
+    "display": "standalone",
+    "name": "netlify",
+    "orientation": "any",
+    "scope": "/",
+    "short_name": "netlify",
+    "start_url": "index.html",
+    "theme_color": "#132235",
+    "categories": [
+      "business",
+      "education",
+      "finance",
+      "security",
+      "utilities"
+    ],
+    "screenshots": [],
+    "icons": [
+      {
+        "src": "assets/img/icon/128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/img/icon/144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/img/icon/152.png",
+        "sizes": "152x152",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/img/icon/167.png",
+        "sizes": "167x167",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/img/icon/180.png",
+        "sizes": "180x180",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/img/icon/192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/img/icon/256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/img/icon/512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+  
+    ],
+    "shortcuts": [],
+    "lang": "pt",
+    "prefer_related_applications": true
+  }
