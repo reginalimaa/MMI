@@ -1,6 +1,5 @@
 * {
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;;
+    font-family: 'Quicksand', sans-serif;
 }
 
 :root {
@@ -115,8 +114,28 @@ th, td {
 
 h1{
     font-weight: bold;
-    font-size: 22px;
+    font-size: 2em;
     padding-bottom: 30px;
+}
+
+h2{
+    padding-top: 30px;
+    padding-bottom: 18px;
+
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+h3{
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+h4{
+    font-size: 1em;
+    font-weight: 500;
+
+    padding-top: 30px;
 }
 
 .container-cards{
@@ -173,11 +192,6 @@ h1{
 
     width: 100px;
     height: 100px;
-}
-
-p {
-    width: 106px;
-    margin: 0, auto;
 }
 
 .button-login{
