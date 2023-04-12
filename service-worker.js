@@ -1,4 +1,4 @@
-var cacheName = 'pwaTeste+-v1.2';
+var cacheName = 'PRVNTV-V1';
 
 self.addEventListener('install', event => {
 
@@ -11,7 +11,7 @@ self.addEventListener('install', event => {
         './generalInformation.html',
         './help.html',
         './home.html',
-        './login.html',
+        './index.html',
         './machineIdentification.html',
         './requestMaintenance.html',
 
@@ -19,12 +19,14 @@ self.addEventListener('install', event => {
         './assets/css/style.css',
         './assets/css/machineIdentification.css',
         './assets/css/requestMaintenance.css',
-        './assets/css/login.css',
+        './assets/css/index.css',
         './assets/css/help.css',
 
+        './assets/img/logoLogin.svg',
+        './assets/img/logo.svg',
         './assets/img/dashboarg.png',
         './assets/img/dictation.png',
-        './assets/img/hamburger.png',
+        './assets/img/menuHamburger.png',
         './assets/img/help.png',
         './assets/img/manutencao.png',
         './assets/img/manutencaoCorretiva.png',

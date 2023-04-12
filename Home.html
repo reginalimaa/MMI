@@ -17,10 +17,10 @@
 </head>
 
 <body>
-    <header class="l-header">
-        <img class="logo" src="" alt="">
+    <header class="container l-header">
+        <img src="assets/img/logo.svg" alt="">
         <nav class="dropdown">
-            <button onclick="myFunction()" class="dropbtn"><img  class="img-btn" src="assets/img/hamburger.png" alt=""></button>
+            <button onclick="myFunction()" class="dropbtn"><img  class="img-btn" src="assets/img/menuHamburger.png" alt=""></button>
             <ul id="myDropdown" class="dropdown-content">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Login</a></li>
@@ -30,9 +30,10 @@
         </nav>
     </header>
 
-    <main class="l-main">
-
+    <main class="container l-main">
+        <h1>O que iremos fazer hoje?</h1>
         <section class="container-cards">
+            
 
             <div class="container-cards-1">
                 <button class="card-button">
@@ -41,12 +42,14 @@
                 <p>Máquinas</p>
             </div>
 
-            <div class="container-cards-2">
-                <button class="card-button">
-                    <img src="assets/img/manutencao.png" alt="">
-                </button>
-                <p>Manutenção</p>
-            </div>
+            <a href="typeMaintenance.html">
+                <div class="container-cards-2">
+                    <button class="card-button">
+                        <img src="assets/img/manutencao.png" alt="">
+                    </button>
+                    <p>Manutenção</p>
+                </div>
+            </a>
 
             <div class="container-cards-3">
                 <button class="card-button">
@@ -55,12 +58,14 @@
                 <p>Dashboards</p>
             </div>
 
-            <div class="container-cards-4">
-                <button class="card-button">
-                    <img src="assets/img/help.png" alt="">
-                </button>
-                <p>Ajuda</p>
-            </div >
+            <a href="help.html">
+                <div class="container-cards-4">
+                    <button class="card-button">
+                        <img src="assets/img/help.png" alt="">
+                    </button>
+                    <p>Ajuda</p>
+                </div >
+            </a>
 
         </section>
 

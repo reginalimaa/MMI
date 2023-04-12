@@ -8,7 +8,9 @@
 
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <link rel="manifest" href="manifest.json">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,16 +20,7 @@
 
 <body>
         <header class="container header-login l-header">
-            <img src="assets/img/logo.png" alt="">
-            <nav class="dropdown">
-                <button onclick="myFunction()" class="dropbtn"><img  class="img-btn" src="assets/img/hamburger.png" alt=""></button>
-                <ul id="myDropdown" class="dropdown-content">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="#">Sobre nós</a></li>
-                    <li><a href="#">Tire suas dúvidas</a></li>
-                </ul>
-            </nav>
+            <img src="assets/img/logoLogin.svg" alt="">
         </header>
 
         <main class="main-login l-main">
@@ -47,12 +40,12 @@
                         <a class="link-login" href="#">Forgot your password?</a>
                     </li>
                     <li class="list-link-login">
-                        <a class="link-login" href="#">Create account</a>
+                        <a class="link-login" href="#"></a>
                     </li>
                 </ul>
 
                 <button class="button-login">
-                    Entrar
+                    <a href="home.html">Entrar</a> 
                 </button>
 
             </section>
@@ -60,8 +53,38 @@
         </main>
 
         <footer class="l-footer">
-            <h1>footer</h1>
+            <h1></h1>
         </footer>
+
+        <script>
+            let newWorker;
+    
+            if ('serviceWorker' in navigator) {
+              navigator.serviceWorker.register('/service-worker.js').then(reg => {
+                reg.addEventListener('updatefound', () => {
+                  // A wild service worker has appeared in reg.installing!
+                  newWorker = reg.installing;
+                  newWorker.addEventListener('statechange', () => {
+                    // Has network.state changed?
+                    switch (newWorker.state) {
+                      case 'installed':
+                        if (navigator.serviceWorker.controller) {
+                          // new update available
+                        }
+                        // No update available
+                        break;
+                    }
+                  });
+                });
+              });
+              let refreshing;
+              navigator.serviceWorker.addEventListener('controllerchange', function () {
+                if (refreshing) return;
+                window.location.reload();
+                refreshing = true;
+              });
+            }
+          </script>
 
         <script>
             function myFunction() {
