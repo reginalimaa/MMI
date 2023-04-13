@@ -220,4 +220,11 @@ h4{
     font-weight: 700;
 }
 
-footer
+.testeDashboard {
+    width: 400px;
+}
+
+.chart_div {
+    display: flex;
+    flex-direction: column;
+}
