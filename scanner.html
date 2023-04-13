@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escanear QR Code</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="container l-header">
+        <img src="assets/img/logo.svg" alt="">
+        <nav class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><img  class="img-btn" src="assets/img/menuHamburger.png" alt=""></button>
+            <ul id="myDropdown" class="dropdown-content">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="help.html">Ajuda</a></li>
+                <li><a href="maintenanceHistory.html">Histórico de manuntenção</a></li>
+                <li><a href="dashboards.html">Dashboards</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container l-main">
+
+        <div class="column">
+            <video controls autoplay style="height:180px; width: 240px;"></video>
+            <p><button type="button" onclick="getStream('video')">Grab video</button></p>
+        </div>
+
+    </main>
+
+    <footer class="container l-footer">
+
+    </footer>
+
+    <script>
+            function getUserMedia(constraints) {
+        // if Promise-based API is available, use it
+        if (navigator.mediaDevices) {
+            return navigator.mediaDevices.getUserMedia(constraints);
+        }
+            
+        // otherwise try falling back to old, possibly prefixed API...
+        var legacyApi = navigator.getUserMedia || navigator.webkitGetUserMedia ||
+            navigator.mozGetUserMedia || navigator.msGetUserMedia;
+            
+        if (legacyApi) {
+            // ...and promisify it
+            return new Promise(function (resolve, reject) {
+            legacyApi.bind(navigator)(constraints, resolve, reject);
+            });
+        }
+        }
+
+        function getStream (type) {
+        if (!navigator.mediaDevices && !navigator.getUserMedia && !navigator.webkitGetUserMedia &&
+            !navigator.mozGetUserMedia && !navigator.msGetUserMedia) {
+            alert('User Media API not supported.');
+            return;
+        }
+
+        var constraints = {};
+        constraints[type] = true;
+        
+        getUserMedia(constraints)
+            .then(function (stream) {
+            var mediaControl = document.querySelector(type);
+            
+            if ('srcObject' in mediaControl) {
+                mediaControl.srcObject = stream;
+            } else if (navigator.mozGetUserMedia) {
+                mediaControl.mozSrcObject = stream;
+            } else {
+                mediaControl.src = (window.URL || window.webkitURL).createObjectURL(stream);
+            }
+            
+            mediaControl.play();
+            })
+            .catch(function (err) {
+            alert('Error: ' + err);
+            });
+        }
+    </script>
+</body>
+</html>
