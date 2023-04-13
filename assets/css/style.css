@@ -116,6 +116,9 @@ body{
     background-color: black;
     grid-area: footer;
     height: 125px;
+
+    position: relative;
+    bottom: 0;
 }
 
 th, td {
