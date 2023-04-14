@@ -43,11 +43,19 @@
             </div>
 
             <div class="container-cards-2">
-                <button class="card-button">
+                <button class="card-button" onclick="exibirCampoDigitacao()">
                     <img src="assets/img/dictation.png" alt="">
                 </button>
                 <p>Digitar código manualmente</p>
             </div>
+            
+            <div id="modal" style="display:none;">
+                <div class="modal-content">
+                    <span class="close" onclick="fecharModal()">&times;</span>
+                    <div id="modal-body"></div>
+                </div>
+            </div>
+            
         </section>
 
     </main>
@@ -75,10 +83,30 @@
         }
     </script>
 
-    <script>
+<script>
+    function exibirCampoDigitacao() {
+  fetch('digitaCodigo.html')
+    .then(response => response.text())
+    .then(html => {
+      const container = document.createElement('div');
+      container.innerHTML = html;
+      document.body.appendChild(container);
+    })
+    .catch(error => console.log(error));
 
-       
+  window.location.href = "digitaCodigo.html"; // Nova linha de código
+}
+    
+    function fecharModal() {
+        const modal = document.getElementById('modal');
+        modal.style.display = 'none';
+    }
     </script>
+    
+    
+    
+    
+    
 
 </body>
 </html>

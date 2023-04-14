@@ -33,6 +33,7 @@
     </header>
 
     <main class="container l-main">
+        <h1>Dashboards</h1>
 
         <div class="testeDashboard">
             <button id="change-chart">Change to Classic</button>
@@ -65,7 +66,7 @@
             }
         }
     </script>
-    <script type="text/javascript">
+   <script type="text/javascript">
         google.charts.load('current', {'packages':['corechart', 'bar']});
         google.charts.setOnLoadCallback(drawStuff);
     
@@ -73,8 +74,7 @@
         var button = document.getElementById('change-chart');
         var chartDiv = document.getElementById('chart_div');
     
-        var data = google.visualization.arrayToDataTable([
-            ['Tipo de dano', 'Custo de reparo (em reais)', 'Tempo de inatividade (em horas)'],
+        var data = google.visualization.arrayToDataTable([            ['Tipo de dano', 'Custo de reparo (em reais)', 'Tempo de inatividade (em horas)'],
             ['Arranhões', 500, 2],
             ['Amassados', 1500, 6],
             ['Pintura', 1000, 4],
@@ -94,8 +94,8 @@
             },
             axes: {
             y: {
-                reparo: {label: 'Custo de reparo (em reais)'}, // Left y-axis.
-                inatividade: {side: 'right', label: 'Tempo de inatividade (em horas)'} // Right y-axis.
+                reparo: {label: 'Custo de reparo (em reais)', title: 'Custo de reparo (em reais)'}, // Left y-axis.
+                inatividade: {side: 'right', label: 'Tempo de inatividade (em horas)', title: 'Tempo de inatividade (em horas)'} // Right y-axis.
             }
             }
         };
@@ -130,8 +130,7 @@
     
         drawMaterialChart();
         };
-    </script>
-
+</script>
     <script type="text/javascript">
         google.charts.load('current', {'packages':['corechart']});
         google.charts.setOnLoadCallback(drawChart);

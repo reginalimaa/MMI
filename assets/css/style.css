@@ -228,3 +228,62 @@ h4{
     display: flex;
     flex-direction: column;
 }
+
+.container-column-forms {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-forms-request {
+    padding-bottom: 4px;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.input-generalInformation {
+    border-radius: 5px;
+    border: 1px solid #DDDBDB;
+    padding: 5px;
+}
+
+/* Estilo da modal */
+.modal {
+    display: none; /* Esconder a modal por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Estilo do conteúdo da modal */
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+/* Estilo do botão de fechar */
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

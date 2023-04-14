@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="container l-header">
+        <img src="assets/img/logo.svg" alt="">
+        <nav class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><img  class="img-btn" src="assets/img/menuHamburger.png" alt=""></button>
+            <ul id="myDropdown" class="dropdown-content">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="help.html">Ajuda</a></li>
+                <li><a href="maintenanceHistory.html">Histórico de manuntenção</a></li>
+                <li><a href="dashboards.html">Dashboards</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container l-main">
+        <h1>Digitar código manualmente</h1>
+        <form>
+            <label for="codigo">Digite o código:</label>
+            <input type="text" id="codigo" name="codigo">
+            <button class="button-login" type="submit">Enviar</button>
+        </form>
+
+    </main>
+
+</body>

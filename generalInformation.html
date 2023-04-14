@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Identificar Máquina</title>
+    <title>Informações gerais da máquina</title>
 
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -16,8 +16,8 @@
 </head>
 
 <body>
-    <header class="l-header">
-        <img class="logo" src="assets/img/logo.svg" alt="">
+    <header class="container l-header">
+        <img src="assets/img/logo.svg" alt="">
         <nav class="dropdown">
             <button onclick="myFunction()" class="dropbtn"><img  class="img-btn" src="assets/img/menuHamburger.png" alt=""></button>
             <ul id="myDropdown" class="dropdown-content">
@@ -31,10 +31,36 @@
 
     <main class="container l-main">
         <h1>Informações gerais da máquina</h1>
-        
-
+         
+        <form class="container-column-forms">
+            <label class="label-forms-request" for="codigo">Código:</label>
+            <input class="input-generalInformation" type="text" id="codigo" name="codigo" value="EQT-123"><br>
             
-        </section>
+            <label class="label-forms-request" for="fabricante">Fabricante:</label>
+            <input class="input-generalInformation" type="text" id="fabricante" name="fabricante" value="ACME Corporation"><br>
+            
+            <label class="label-forms-request" for="nome">Nome:</label>
+            <input class="input-generalInformation" type="text" id="nome" name="nome" value="Máquina de Corte a Laser"><br>
+            
+            <label class="label-forms-request" for="localizacao">Localização:</label>
+            <input class="input-generalInformation" type="text" id="localizacao" name="localizacao" value="Sala 3"><br>
+            
+            <label class="label-forms-request" for="tipo">Tipo:</label>
+            <input class="input-generalInformation" type="text" id="tipo" name="tipo" value="Máquina de Usinagem"><br>
+            
+            <label class="label-forms-request" for="ultima_manutencao">Última Manutenção:</label>
+            <input class="input-generalInformation" type="text" id="ultima_manutencao" name="ultima_manutencao" value="2022-02-28"><br>
+            
+            <label class="label-forms-request" for="proxima_manutencao">Próxima Manutenção:</label>
+            <input class="input-generalInformation" type="text" id="proxima_manutencao" name="proxima_manutencao" value="2023-02-28"><br>    
+            
+            <button class="button-login">
+                <a href="#">Confirmar</a> 
+            </button>
+        
+        </form>
+
+          
 
     </main>
 
