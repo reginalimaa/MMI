@@ -19,14 +19,15 @@
 
 <body>
     <header class="container l-header">
-        <img src="assets/img/logo.svg" alt="">
+        <a href="home.html"><img src="assets/img/logo.svg" alt=""></a>
         <nav class="dropdown">
-            <button onclick="myFunction()" class="dropbtn"><img  class="img-btn" src="assets/img/menuHamburger.png" alt=""></button>
+            <img class="dropbtn" onclick="myFunction()" class="img-btn" src="assets/img/menuHamburger.png" alt="">
             <ul id="myDropdown" class="dropdown-content">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="help.html">Ajuda</a></li>
-                <li><a href="maintenanceHistory.html">Histórico de manuntenção</a></li>
-                <li><a href="dashboards.html">Dashboards</a></li>
+                <li><a href="dahsboard.html">Dashboards</a></li>
+                <li><a href="typeMaintenance.html">Tipos de manuntenção</a></li>
+                <li><a href="machine.html">Histórico de manuntenção</a></li>
             </ul>
         </nav>
     </header>
@@ -34,17 +35,18 @@
     <main class="container l-main">
         <h1>Identificar máquina</h1>
         <section class="container-cards">
-
-            <div id="scanner.html" class="container-cards-1">
-                <button class="card-button" type="button">
-                    <img src="assets/img/qrCode.png" alt="">
-                </button>
-                <p>Ler de QR Code</p>
-            </div>
+            <a href="scanner.html">
+                <div id="scanner.html" class="container-cards-1">
+                    <button class="card-button" type="button">
+                        <img src="assets/img/qrCode.svg" alt="">
+                    </button>
+                    <p>Ler de QR Code</p>
+                </div>
+            </a>
 
             <div class="container-cards-2">
                 <button class="card-button" onclick="exibirCampoDigitacao()">
-                    <img src="assets/img/dictation.png" alt="">
+                    <img src="assets/img/digitaCod.svg" alt="">
                 </button>
                 <p>Digitar código manualmente</p>
             </div>
@@ -60,9 +62,7 @@
 
     </main>
 
-    <footer class="l-footer">
-        <h1>footer</h1>
-    </footer>
+    <footer class="l-footer"></footer>
 
     <script>
         function myFunction() {

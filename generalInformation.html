@@ -17,14 +17,15 @@
 
 <body>
     <header class="container l-header">
-        <img src="assets/img/logo.svg" alt="">
+        <a href="home.html"><img src="assets/img/logo.svg" alt=""></a>
         <nav class="dropdown">
-            <button onclick="myFunction()" class="dropbtn"><img  class="img-btn" src="assets/img/menuHamburger.png" alt=""></button>
+            <img class="dropbtn" onclick="myFunction()" class="img-btn" src="assets/img/menuHamburger.png" alt="">
             <ul id="myDropdown" class="dropdown-content">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="help.html">Ajuda</a></li>
-                <li><a href="maintenanceHistory.html">Histórico de manuntenção</a></li>
-                <li><a href="dashboards.html">Dashboards</a></li>
+                <li><a href="dahsboard.html">Dashboards</a></li>
+                <li><a href="typeMaintenance.html">Tipos de manuntenção</a></li>
+                <li><a href="machine.html">Histórico de manuntenção</a></li>
             </ul>
         </nav>
     </header>
@@ -55,18 +56,15 @@
             <input class="input-generalInformation" type="text" id="proxima_manutencao" name="proxima_manutencao" value="2023-02-28"><br>    
             
             <button class="button-login">
-                <a href="#">Confirmar</a> 
+                <a href="requestMaintenance.html">Confirmar</a> 
             </button>
-        
         </form>
 
           
 
     </main>
 
-    <footer class="l-footer">
-        <h1>footer</h1>
-    </footer>
+    <footer class="l-footer"></footer>
 
     <script>
         function myFunction() {

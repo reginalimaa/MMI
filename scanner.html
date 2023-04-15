@@ -17,20 +17,21 @@
 
 <body>
     <header class="container l-header">
-        <img src="assets/img/logo.svg" alt="">
+        <a href="home.html"><img src="assets/img/logo.svg" alt=""></a>
         <nav class="dropdown">
-            <button onclick="myFunction()" class="dropbtn"><img  class="img-btn" src="assets/img/menuHamburger.png" alt=""></button>
+            <img class="dropbtn" onclick="myFunction()" class="img-btn" src="assets/img/menuHamburger.png" alt="">
             <ul id="myDropdown" class="dropdown-content">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="help.html">Ajuda</a></li>
-                <li><a href="maintenanceHistory.html">Histórico de manuntenção</a></li>
-                <li><a href="dashboards.html">Dashboards</a></li>
+                <li><a href="dahsboard.html">Dashboards</a></li>
+                <li><a href="typeMaintenance.html">Tipos de manuntenção</a></li>
+                <li><a href="machine.html">Histórico de manuntenção</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="container l-main">
-
+        <h1>Aponte a camera para o QR Code</h1>
         <div class="column">
             <video controls autoplay style="height:180px; width: 240px;"></video>
             <p><button type="button" onclick="getStream('video')">Grab video</button></p>
@@ -38,9 +39,7 @@
 
     </main>
 
-    <footer class="container l-footer">
-
-    </footer>
+    <footer class="l-footer"></footer>
 
     <script>
             function getUserMedia(constraints) {
@@ -88,6 +87,24 @@
             .catch(function (err) {
             alert('Error: ' + err);
             });
+        }
+    </script>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
         }
     </script>
 </body>

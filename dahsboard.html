@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Dashboards</title>
 
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -20,14 +20,15 @@
 
 <body>
     <header class="container l-header">
-        <img src="assets/img/logo.svg" alt="">
+        <a href="home.html"><img src="assets/img/logo.svg" alt=""></a>
         <nav class="dropdown">
-            <button onclick="myFunction()" class="dropbtn"><img  class="img-btn" src="assets/img/menuHamburger.png" alt=""></button>
+            <img class="dropbtn" onclick="myFunction()" class="img-btn" src="assets/img/menuHamburger.png" alt="">
             <ul id="myDropdown" class="dropdown-content">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="help.html">Ajuda</a></li>
-                <li><a href="maintenanceHistory.html">Histórico de manuntenção</a></li>
-                <li><a href="dashboards.html">Dashboards</a></li>
+                <li><a href="dahsboard.html">Dashboards</a></li>
+                <li><a href="typeMaintenance.html">Tipos de manuntenção</a></li>
+                <li><a href="machine.html">Histórico de manuntenção</a></li>
             </ul>
         </nav>
     </header>
@@ -35,6 +36,7 @@
     <main class="container l-main">
         <h1>Dashboards</h1>
 
+        
         <div class="testeDashboard">
             <button id="change-chart">Change to Classic</button>
             <br><br>
@@ -44,9 +46,7 @@
 
     </main>
 
-    <footer class="l-footer">
-        <h1>footer</h1>
-    </footer>
+    <footer class="l-footer"></footer>
 
     <script>
         function myFunction() {

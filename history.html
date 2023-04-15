@@ -1,0 +1,148 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="container l-header">
+        <a href="home.html"><img src="assets/img/logo.svg" alt=""></a>
+        <nav class="dropdown">
+            <img class="dropbtn" onclick="myFunction()" class="img-btn" src="assets/img/menuHamburger.png" alt="">
+            <ul id="myDropdown" class="dropdown-content">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="help.html">Ajuda</a></li>
+              <li><a href="dahsboard.html">Dashboards</a></li>
+              <li><a href="typeMaintenance.html">Tipos de manuntenção</a></li>
+              <li><a href="machine.html">Histórico de manuntenção</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container l-main">
+        <h1>Histórico de manuntenção</h1>
+        <div class="search">
+            <div class="form-outline mb-4">
+                <input type="search" class="form-control" id="search-input">
+            </div>
+            <button type="button" class="btn btn-primary" id="search-button">Filtar</button>
+        </div>
+        <table class="table-history" id="maintenance-table">
+            <thead>
+              <tr>
+                <th>Código</th>
+                <th>Data</th>
+                <th>Tipo de Manutenção</th>
+                <th>Descrição da Manutenção</th>
+                <th>Responsável pela Manutenção</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td>01/01/2022</td>
+                <td>Preventiva</td>
+                <td>Troca de óleo</td>
+                <td>João</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>15/02/2022</td>
+                <td>Corretiva</td>
+                <td>Substituição de motor</td>
+                <td>Carlos</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>30/04/2022</td>
+                <td>Preventiva</td>
+                <td>Troca de filtros</td>
+                <td>Maria</td>
+              </tr>
+            </tbody>
+          </table>
+      
+          <script src="script.js"></script>
+        </body>
+      </html>
+    </main>
+
+    <footer class="l-footer"></footer>
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+        const searchInput = document.getElementById('search-input');
+const tableRows = document.querySelectorAll('#maintenance-table tbody tr');
+
+searchInput.addEventListener('keyup', function(event) {
+  const searchTerm = event.target.value.toLowerCase();
+
+  tableRows.forEach(function(row) {
+    const cells = row.querySelectorAll('td');
+    let found = false;
+
+    cells.forEach(function(cell) {
+      if (cell.textContent.toLowerCase().includes(searchTerm)) {
+        found = true;
+      }
+    });
+
+    if (found) {
+      row.style.display = '';
+    } else {
+      row.style.display = 'none';
+    }
+  });
+});
+
+const searchButton = document.getElementById("search-button");
+searchButton.addEventListener("click", () => {
+  const input = document.getElementById("search-input");
+  const filter = input.value.toUpperCase();
+  const tableRows = document.getElementsByTagName("tr");
+
+  for (let i = 0; i < tableRows.length; i++) {
+    const cells = tableRows[i].getElementsByTagName("td");
+    let match = false;
+    for (let j = 0; j < cells.length; j++) {
+      const cellText = cells[j].textContent || cells[j].innerText;
+      if (cellText.toUpperCase().indexOf(filter) > -1) {
+        match = true;
+        break;
+      }
+    }
+    tableRows[i].style.display = match ? "" : "none";
+  }
+});
+    </script>
+    
+
+</body>
+</html>

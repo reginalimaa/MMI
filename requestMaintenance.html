@@ -16,14 +16,15 @@
 
 <body>
     <header class="container l-header">
-        <img src="assets/img/logo.svg" alt="">
+        <a href="home.html"><img src="assets/img/logo.svg" alt=""></a>
         <nav class="dropdown">
-            <button onclick="myFunction()" class="dropbtn"><img  class="img-btn" src="assets/img/menuHamburger.png" alt=""></button>
+            <img class="dropbtn" onclick="myFunction()" class="img-btn" src="assets/img/menuHamburger.png" alt="">
             <ul id="myDropdown" class="dropdown-content">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="help.html">Ajuda</a></li>
-                <li><a href="maintenanceHistory.html">Histórico de manuntenção</a></li>
-                <li><a href="dashboards.html">Dashboards</a></li>
+                <li><a href="dahsboard.html">Dashboards</a></li>
+                <li><a href="typeMaintenance.html">Tipos de manuntenção</a></li>
+                <li><a href="machine.html">Histórico de manuntenção</a></li>
             </ul>
         </nav>
     </header>
@@ -62,19 +63,17 @@
                 <option value="Nao">Pouco urgente</option>
             </select>
 
-            <label for="">Fazer upoad de arquivos</label>
+            <label for="">Fazer upoad de arquivos</label> <br><br>
             <input class="input-text" type="file" placeholder=""> 
 
-            <button class="button-login">
+            <button onclick="sendForms()" class="button-login">
                 Enviar solicitação
             </button>
         </form>
 
     </main>
 
-    <footer class="l-footer">
-        <h1>footer</h1>
-    </footer>
+    <footer class="l-footer"></footer>
 
     <script>
         function myFunction() {
@@ -93,8 +92,11 @@
                 }
             }
         }
-
-
+    </script>
+    <script>
+        function sendForms(){
+            alert("Solicitação enviada com sucesso. Aguarde o técnico.")
+        }
     </script>
     
 </body>

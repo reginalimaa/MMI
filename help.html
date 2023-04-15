@@ -17,14 +17,15 @@
 
 <body>
     <header class="container l-header">
-        <img src="assets/img/logo.svg" alt="">
+        <a href="home.html"><img src="assets/img/logo.svg" alt=""></a>
         <nav class="dropdown">
-            <button onclick="myFunction()" class="dropbtn"><img  class="img-btn" src="assets/img/menuHamburger.png" alt=""></button>
+             <img class="dropbtn" onclick="myFunction()" class="img-btn" src="assets/img/menuHamburger.png" alt="">
             <ul id="myDropdown" class="dropdown-content">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="help.html">Ajuda</a></li>
-                <li><a href="maintenanceHistory.html">Histórico de manuntenção</a></li>
-                <li><a href="dashboards.html">Dashboards</a></li>
+                <li><a href="dahsboard.html">Dashboards</a></li>
+                <li><a href="typeMaintenance.html">Tipos de manuntenção</a></li>
+                <li><a href="machine.html">Histórico de manuntenção</a></li>
             </ul>
         </nav>
     </header>
@@ -32,13 +33,13 @@
     <main class="container l-main">
         <h1>Ajuda</h1>
 
-        <ul>
-            <li><a href="#section-1">Sobre a aplicação</a></li>
-            <li><a href="#section-2">Dúvidas frequentes (FAQ)</a></li>
-            <li><a href="#section-3">Tutoriais</a></li>
-            <li><a href="#section-4">Contatar Suporte</a></li>
-            <li><a href="#section-5">Politivas de Privacidade</a></li>
-            <li><a href="#section-6">Termos de Uso</a></li>
+        <ul class="container">
+            <li class="links-help"><a href="#section-1">Sobre a aplicação</a></li>
+            <li class="links-help"><a href="#section-2">Dúvidas frequentes (FAQ)</a></li>
+            <li class="links-help"><a href="#section-3">Tutoriais</a></li>
+            <li class="links-help"><a href="#section-4">Contatar Suporte</a></li>
+            <li class="links-help"><a href="#section-5">Politivas de Privacidade</a></li>
+            <li class="links-help"><a href="#section-6">Termos de Uso</a></li>
         </ul>
 
         <section class="text-about-aplication" id="section-1">
@@ -112,15 +113,13 @@
                     <p class="p-pag-help">Após efetuar o Login, a aplicação abre a MainPage onde quatro botões serão mostrados.
                         Clique em <b>MANUTENÇÃO</b>, ao clicar, outra página se abre com uma tela secundária e as opções de formulários diferentes 
                         voltados para tipos de manutenção diferentes. Em seguida, selecione se deseja <b>Digitar manualmente o código da máquina</b> 
-                        em questão ou <b>Escanear o QR code</b>.
-                    </p>
-                    <p class="p-pag-help">
+                        em questão ou <b>Escanear o QR code</b>.<br><br>
+                    
                         Após seguir esses passos, uma página com um formulário de manutenção deve ser aberto, onde o código geral da máquina é preenchido 
-                        automaticamente no campo <b>Código</b>
-                    </p>
-                    <p class="p-pag-help">
+                        automaticamente no campo <b>Código</b>.<br><br>
+                    
                         Preencha corretamente os campos do formulário e descreva de maneira objetiva uma <b>descrição</b> do motivo do preenchimento daquele
-                        formulário, se possível/necessário, anexe fotos do maquinário no formulário
+                        formulário, se possível/necessário, anexe fotos do maquinário no formulário.
                     </p>
                 </li>
             </ul>
@@ -131,26 +130,22 @@
             <p class="p-pag-help">
                 Quando você está enfrentando um problema com sua aplicação ou plataforma, pode ser frustrante e difícil resolver o problema sozinho(a).
                 É por isso que oferecemos um suporte técnico dedicado para ajudar você a solucionar problemas e responder a quaisquer dúvidas que possa
-                ter. Aqui estão algumas maneiras de contatar nosso suporte técnico:
-            </p>
-            <p class="p-pag-help">
+                ter. Aqui estão algumas maneiras de contatar nosso suporte técnico:<br><br>
+            
                 1. Envie um e-mail: Você pode enviar um e-mail para o endereço de suporte técnico fornecido na nossa plataforma. Certifique-se de 
                 fornecer informações detalhadas sobre o problema que está enfrentando, incluindo capturas de tela, se possível. Nossa equipe de 
-                suporte técnico responderá o mais rápido possível.
-            </p>
-            <p class="p-pag-help">
+                suporte técnico responderá o mais rápido possível.<br><br>
+            
                 2. Entre em contato via telefone: Se você precisar de assistência imediata, pode entrar em contato conosco por telefone. 
-                Nossa equipe de suporte técnico terá prazer em ajudar a resolver seu problema por telefone.
-            </p>
-            <p class="p-pag-help">
+                Nossa equipe de suporte técnico terá prazer em ajudar a resolver seu problema por telefone.<br><br>
+          
                 3. Utilize a seção de ajuda: Nossa plataforma oferece uma seção de “Dúvidas Frequentes” que contém informações e tutoriais sobre o 
                 uso da plataforma. Lá você encontrará respostas para muitas perguntas comuns que os usuários podem ter. Se não encontrar a resposta 
-                que procura, basta entrar em contato conosco por e-mail ou chat online.
-            </p>
-            <p class="p-pag-help">
+                que procura, basta entrar em contato conosco por e-mail ou chat online.<br><br>
+            
                 Independentemente do método que escolher, nossa equipe de suporte técnico estará disponível para ajudar a resolver seus problemas e 
                 responder a todas as suas dúvidas. Estamos empenhados em fornecer a melhor experiência possível aos nossos usuários, e isso inclui um 
-                suporte técnico rápido e eficiente. Não hesite em contatar-nos se precisar de ajuda.</p>
+                suporte técnico rápido e eficiente. Não hesite em contatar-nos se precisar de ajuda.
             </p>
         </section>
 
@@ -159,16 +154,13 @@
             <p class="p-pag-help">
                 Esse app foi elaborado e desenvolvido pela lgbTech Development (ou decidam outro nome pra a empresa, mas melhor q esse eu n acho q tenha), 
                 que assegura o compromisso com a privacidade de seus usuários (sendo estes pessoas físicas ou jurídicas), assim como a segurança de seus dados
-                vinculados à aplicação.
-            </p>
-            <p class="p-pag-help">
+                vinculados à aplicação. <br><br>
+            
                 Através desse documento, a Política de Privacidade é definida e justificada abrangindo desde o colhimento, uso e manipulação dos 
                 dados dos usuários por parte da empresa desenvolvedora do sistema (App), e se faz necessário o aceite por parte do usuário dos 
                 termos aqui apresentados para uso da aplicação. Todas as tratativas descritas estão dentro das normas estabelecidas na Constituição 
                 Federal de 1988 (art. 5º, LXXIX; e o art. 22º, XXX – incluídos pela EC 115/2022), das normas de Proteção de Dados (LGPD, Lei Federal 
                 13.709/2018) e das relações de consumo (aquela na qual existe um consumidor, um fornecedor e um produto/serviço que ligue um ao outro) da Lei Federal 8078/1990. 
-            </p>
-
             <ul>
                 <li>
                     <h4 >1. Como ocorre a coleta de dados?</h4>
@@ -177,36 +169,105 @@
                         aplicativo do colaborador, sejam estas funcionalidades para perfis não somente de leitura/consulta dos dados como também de manipulação e 
                         cadastro/inserção dos mesmos.
                     </p>
+
                     <h4>1.1 Dados coletados pela aplicação e suas finalidades</h4>
                     <p class="p-pag-help">
                         A coleta dos seguintes dados se dá de forma a ser justificada pelas suas finalidades descritas ao lado, são eles:
                     </p>
+
                     <h4>1.2 Consentimento da coleta de dados</h4>
                     <p class="p-pag-help">
-
+                        Para, e ao realizar a utilização da aplicação e suas funcionalidades a nivel integral, é necessário ter realizado previamente o aceite dos
+                        termos de uso e política de privacidade do sistema (deve ser feito uma única vez inicialmente, e sempre que houver a atualização deste 
+                        documento, o usuário é avisado através de notificações que possibilitam a leitura da nova política, e que solicitam um novo aceite para a atualização referente), autorizando o uso dos dados pessoais por parte da lgbTech Development.
+                        O consentimento desses dados pode ser revogado por parte do usuário/funcionário em contato com a empresa, visando acordo situacional, mas 
+                        esse ajuste pode dificultar a performance do app tendo em vista que os dados se fazem necessários para seu uso.
                     </p>
                 </li>
                 <li>
                     <h4 class="min-title-help">2. Direitos assegurados ao usuário</h4>
-                    <p class="p-pag-help"></p>
+                    <p class="p-pag-help">
+                        São direitos assegurados aos usuários da aplicação, previstos em legislação, no artigo 18 da Lei Geral de Proteção de Dados:
+                        1. O acesso aos documentos completos especificando o uso e tratamento de seus dados, termos de uso, bem como o interrompimento da 
+                        concessão dos dados a empresa desenvolvedora (pode acarretar em medidas por parte da empresa contratante); <br><br>
+
+                        2. Acesso aos dados dispostos de compartilhamento na aplicação, através de login e senha gerados de forma automática com seu cadastro sendo 
+                        realizado por parte da empresa, de forma automatizada;<br><br>
+
+                        3. Efetuar a correção dos dados em caso de erro de cadastro ou necessidade de retificação (realizada por meio de uso de documentação 
+                        comprobatória);<br><br>
+
+                        4. Solicitar a exclusão dos seus dados tratados, exceto em casos específicos previstos em legislação.<br><br>
+
+                        5. Realizar consultas e solicitar mais informações em caso de dúvidas sobre o uso de seus dados, uso do app e problemas relacionados, 
+                        entre outros casos que se façam necessários. <br><br>
+
+                        Realizar consultas e solicitar mais informações em caso de dúvidas sobre o uso de seus dados, uso do app e problemas relacionados, 
+                        entre outros casos que se façam necessários.
+                    </p>
+                    <h4>2.2 Deveres do usuário quanto ao uso da aplicação</h4>
+                    <p class="p-pag-help">
+                        São deveres do usuário, dentro do uso da aplicação, em manipulação, inserção e exclusão de dados dentro das tratativas e dos serviços 
+                        dispostos no app, de:<br><br>
+
+                        1. Realizar a inserção de dados verídicos, com acuracidade e clareza nas informações;<br><br>
+
+                        2. Realizar o preenchimento e uso de funcionalidades dispostas no app da forma correta, assim como pedido nos formulários e dentro das 
+                        normas estabelecidas nos produtos/serviços da empresa contratante;<br><br>
+
+                        3. Não compartilhar dados das tratativas ou da própria aplicação com terceiros fora da empresa ou que não sejam ligados ao desenvolvimento 
+                        da aplicação, para que não seja configurada quebra de sigilo ou vazamento de informações pessoais e/ou sensíveis.
+                    </p>
                 </li>
                 <li>
                     <h4 class="min-title-help">3. Armazenamento e tempo de uso dos dados</h4>
-                    <p class="p-pag-help"></p>
+                    <p class="p-pag-help">
+                        Os dados gerados a partir do uso da aplicação são armazenados em banco de dados em nuvem durante o tempo necessário do vínculo de 
+                        prestação de serviço com a empresa contratante, que tem pleno poder de acesso à esses dados e que pode realizar extrações e replicá-las 
+                        em bancos próprios, locais ou em nuvem. 
+                        Em caso de quebra ou término de contrato, a empresa possui um prazo estabelecido para realizar a extração de todos os dados gerados 
+                        durante o tempo de vínculo antes que a exclusão desses dados seja realizada. Uma vez que a exclusão dos dados é realizada, o procedimento 
+                        é irreversível e a empresa não possuirá mais o acesso pelas plataformas de hospedagem da lgbTech Development.
+                    </p>
                 </li>
                 <li>
                     <h4 class="min-title-help">4. Compartilhamento de dados com terceiros</h4>
-                    <p class="p-pag-help"></p>
+                    <p class="p-pag-help">
+                        A lgbTech Development não realiza o compartilhamento de dados com nenhum outro terceiro que não possua autorização de acesso à esses 
+                        dados. Os dados são compartilhados apenas entre a lgbTech Development como desenvolvedora e a empresa contratante como fornecedora e 
+                        destinatário final dos dados dispostos na aplicação. A manipulação e uso desses dados fica a critério da contratante, sendo as 
+                        disposições relacionadas as políticas internas de privacidade próprias da empresa contratante definidas apenas pela mesma. A empresa 
+                        contratante pode possuir vínculo com terceiros e realizar o compartilhamento desses dados com estes.
+                    </p>
                 </li>
                 <li>
                     <h4 class="min-title-help">5. Atualização da Política de Privacidade</h4>
-                    <p class="p-pag-help"></p>
+                    <p class="p-pag-help">
+                        Essa política de privacidade está em sua versão 1.0 (primeira versão) finalizada e publicada no dia 10/04/2023, podendo sofrer 
+                        atualizações conforme necessário, cabendo a nós da lgbTech Development realizar a disponibilização do documento no que diz respeito a 
+                        face da aplicação, além de solicitar novamente a leitura e aceite dos termos modificados em destaque para que o acesso ao seu 
+                        uso/funcionalidades seja permitido e que os seus usuários estejam uniformemente cientes dessas disposições.
+                        A necessidade de atualizações se dá pelo melhor encaixe/adequação advindos das mudanças realizadas no processo de atualização para 
+                        implementação de melhorias da aplicação.
+                    </p>
                 </li>
                 <li>
                     <h4 class="min-title-help">6. Localização, contato com a empresa</h4>
-                    <p class="p-pag-help"></p>
+                    <p class="p-pag-help">
+                        O contato para caso de dúvidas ou para esclarecimentos gerais em relação a esta política de privacidade, aos termos de uso da 
+                        aplicação ou outro evento/produto relacionado a empresa **lgbTech Development**, disponibilizamos os canais de contato e o endereço 
+                        para envio de correspondências. Seguem os canais abaixo:<br><br>
+                        <ul class="container">
+                            <li class="links-contact">Telefone para capitais e zonas urbanas: 81 9 8888-4999</li><br><br>
+                            <li class="links-contact">Telefone para cidades do interior, rurais: 0800 000 0000</li><br><br>
+                            <li class="links-contact">E-mail para contato: lgbtechdevelopment@beyonce.com.br</li><br><br>
+                            <li class="links-contact">Endereço: Rua dos Bobos, n° 0, Casa muito engraçada, Recife, Pernambuco, Brasil (CEP 00000-000)</li>
+                        </ul>
+                    </p>
                 </li>
             </ul>
+
+            <a href=""><img src="" alt=""></a>
         </section>
 
         <section id="section-6">
@@ -216,9 +277,7 @@
 
     </main>
 
-    <footer class="l-footer">
-        <h1>footer</h1>
-    </footer>
+    <footer class="l-footer"></footer>
 
     <script>
         function myFunction() {
