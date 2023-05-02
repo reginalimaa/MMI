@@ -8,7 +8,7 @@ self.addEventListener('install', event => {
     caches.open(cacheName)
       .then(cache => cache.addAll([
         './index.html',
-        './generalInformation.html',
+        './generalinformation.html',
         './help.html',
         './home.html',
         
@@ -21,12 +21,11 @@ self.addEventListener('install', event => {
         './assets/css/requestMaintenance.css',
         './assets/css/index.css',
         './assets/css/help.css',
-        './assets/css/home.css',
 
         './assets/img/logoLogin.svg',
         './assets/img/logo.svg',
-        './assets/img/dashboard.png',
-        './assets/img/digitaCod.png',
+        './assets/img/dashboard.svg',
+        './assets/img/digitaCod.svg',
         './assets/img/menuHamburger.png',
         './assets/img/ajuda.svg',
         './assets/img/manutencao.svg',

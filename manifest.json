@@ -1,13 +1,14 @@
 {
+    "name": "PRVNTV",
+    "short_name": "PRVNTV",
+    "start_url": "index.html",
     "background_color": "#ffffff",
     "description": "Aplicação para monitoramento e análise de dados de máquina industriais.",
     "dir": "ltr",
     "display": "standalone",
-    "name": "PRVNTV",
     "orientation": "any",
-    "scope": "/",
-    "short_name": "PRVNTV",
-    "start_url": "index.html",
+    "scope": "index.html",
+   
     "theme_color": "#F8F8FF",
     "categories": [
       "business",
@@ -29,14 +30,13 @@
       {
         "src": "assets/img/icons/152.png",
         "sizes": "152x152",
-        "type": "image/png",
-        "purpose": "any maskable"
-
+        "type": "image/png"
       },
       {
         "src": "assets/img/icons/167.png",
         "sizes": "167x167",
-        "type": "image/png"
+        "type": "image/png",
+        "purpose": "any maskable"
       },
       {
         "src": "assets/img/icons/180.png",
@@ -44,8 +44,8 @@
         "type": "image/png"
       },
       {
-        "src": "assets/img/icons/192.png",
-        "sizes": "192x192",
+        "src": "assets/img/icons/196.png",
+        "sizes": "196x196",
         "type": "image/png"
       },
       {
