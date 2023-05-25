@@ -31,12 +31,14 @@
     </header>
 
     <main class="container l-main">
-        <h1>Aponte a camera para o QR Code</h1>
-        <div class="column">
-            <video controls autoplay style="height:180px; width: 240px;"></video>
-            <p><button type="button" onclick="getStream('video')">Grab video</button></p>
+        <div class="container-scanner">
+            <h1>Aponte a camera para o QR Code</h1>
+            <div class="container-scanner-camera">
+                <video controls autoplay class="video"></video>
+            </div>
+            <button type="button" onclick="getStream('video')">Scanner QR Code</button>
+            <a href="generalinformation.html">Prosseguir</a>
         </div>
-
     </main>
 
     <footer class="l-footer"></footer>

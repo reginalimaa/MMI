@@ -35,15 +35,16 @@
 
     <main class="container l-main">
         <h1>Dashboards</h1>
-
         
+        <div class="grap-two">
+            <title>Gráfico de Colunas - Manutenção Preventiva</title>
+            <div id="columnchart_values" style="width: 900px; height: 300px;"></div>
+        </div> <br><br>
+        <div id="curve_chart" style="width: 100%; height: 300px"></div><br><br>
         <div class="testeDashboard">
-            <button id="change-chart">Change to Classic</button>
             <br><br>
             <div id="chart_div" style="width: 100%; height: 300px;"></div>
-        </div>
-        <div id="curve_chart" style="width: 100%; height: 300px"></div>
-
+        </div><br><br>
     </main>
 
     <footer class="l-footer"></footer>
@@ -83,7 +84,7 @@
         ]);
     
         var materialOptions = {
-            width: 900,
+            width: 400,
             chart: {
             title: 'Frequência de Danos',
             subtitle: 'Tipo de dano, custo em reparos, tempo de inatividade'
@@ -101,7 +102,7 @@
         };
     
         var classicOptions = {
-            width: 600,
+            width: 50,
             series: {
             0: {targetAxisIndex: 0},
             1: {targetAxisIndex: 1}
@@ -162,5 +163,36 @@
         chart.draw(data, options);
         }
     </script>
+    <script type="text/javascript">
+        google.charts.load("current", {packages:['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ["Tipo de Máquina", "Eficiência", { role: "style" } ],
+            ["Máquina A", 85, "#b87333"],
+            ["Máquina B", 70, "silver"],
+            ["Máquina C", 95, "gold"],
+            ["Máquina D", 60, "color: #e5e4e2"]
+          ]);
+    
+          var view = new google.visualization.DataView(data);
+          view.setColumns([0, 1,
+                           { calc: "stringify",
+                             sourceColumn: 1,
+                             type: "string",
+                             role: "annotation" },
+                           2]);
+    
+          var options = {
+            title: "Classificação de Eficiência da Manutenção Preventiva por Tipo de Máquina",
+            width: 400,
+            height: 400,
+            bar: {groupWidth: "95%"},
+            legend: { position: "none" },
+          };
+          var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+          chart.draw(view, options);
+        }
+      </script>
 </body>
 </html>
